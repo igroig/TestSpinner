@@ -11,11 +11,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
-
-
-
-
     <string name="country_prompt">Choose a country</string>
 
     <string-array name="country_arrays">
@@ -28,5 +23,8 @@
         <item>New Zealand</item>
         <item>India</item>
     </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
 
 </resources>
