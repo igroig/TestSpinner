@@ -14,7 +14,7 @@ import android.widget.Button;
  * Created by g.adeishvili on 1/30/2017.
  */
 
-public class SwipeButton extends Button {
+public class    SwipeButton extends Button {
 
     private float x1;
     //x coordinate of where user first touches the button

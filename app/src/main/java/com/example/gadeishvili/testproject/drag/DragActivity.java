@@ -3,11 +3,9 @@ package com.example.gadeishvili.testproject.drag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.example.gadeishvili.testproject.R;
 
@@ -16,7 +14,7 @@ import com.example.gadeishvili.testproject.R;
 public class DragActivity extends AppCompatActivity {
 
     private ImageView imageView;
-    int width;
+    int height;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +24,7 @@ public class DragActivity extends AppCompatActivity {
 
         DisplayMetrics displaymetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
-        width = displaymetrics.widthPixels;
+        height = displaymetrics.heightPixels;
     }
 
     private void initView() {
@@ -42,15 +40,15 @@ public class DragActivity extends AppCompatActivity {
 
                     case MotionEvent.ACTION_DOWN:
 
-                        aa= event.getY();
 
-                        float margin =((RelativeLayout.LayoutParams)view.getLayoutParams()).topMargin;
 
                         firstEventGetRawX = event.getRawX();
-                        dX =  event.getRawX() -view.getX();
-                        dY = event.getRawY() - view.getY() ;
+                        view.getY();
+                        view.getTop();
 
-                        Log.d("" , "onTouch: " + margin + "---" + dY);
+                        dX =  event.getRawX() -view.getX();
+
+                        dY = event.getRawY() - view.getY() ;
 
                         break;
 
@@ -65,10 +63,8 @@ public class DragActivity extends AppCompatActivity {
 
                         }
 
-
                         firstEventGetRawX = event.getRawX();
 
-//                        view.setY(event.getRawY() - dY);
                             view.animate()
                                     .x(event.getRawX() - dX)
                                     .y(event.getRawY() - dY)

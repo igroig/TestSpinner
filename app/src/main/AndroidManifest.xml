@@ -17,7 +17,7 @@
         <activity android:name=".TestPickerActivity" />
         <activity android:name=".TEstSLideButtonActivity" />
         <activity android:name=".slideTextViewActivity" />
-        <activity android:name=".drag.DragActivity">
+        <activity android:name=".drag.DragActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,7 +40,23 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
+        <activity android:name=".drag.GioMenuActivity" />
 
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".ShadowActvity" />
+        <activity android:name=".animationsForNextScreen.FirstActivity">
+
+        </activity>
+        <activity android:name=".animationsForNextScreen.SecondActivity" />
+        <activity android:name=".animationsForNextScreen.ThierdActivity" />
+        <activity android:name=".animationsForNextScreen.FourthActivity" />
+        <activity android:name=".animationsForNextScreen.FifthActivity" />
+        <activity android:name=".animationsForNextScreen.SixthActivity" />
+        <activity android:name=".animationsForNextScreen.SeventhActivity" />
+        <activity android:name=".animationsForNextScreen.EitthActivity"></activity>
     </application>
 
 </manifest>

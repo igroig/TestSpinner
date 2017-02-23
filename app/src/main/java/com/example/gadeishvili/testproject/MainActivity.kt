@@ -40,8 +40,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-
-
         val ACTIVITY_MAIN = R.layout.activity_main
     }
 }
